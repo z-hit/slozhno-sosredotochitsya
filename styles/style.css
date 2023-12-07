@@ -2,4 +2,138 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  margin: 0;
+  background-color: var(--main-color);
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: var(--text-font-size);
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 192px 1fr;
+  block-size: 668px;
+  padding: 10px;
+  background-image: url("../images/cover-image-dark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.header::before {
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: var(--accent-color) 1px solid;
+  border-inline-end: var(--accent-color) 1px solid;
+}
+
+.header::after {
+  position: absolute;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: var(--accent-color) 1px solid;
+  border-inline-start: var(--accent-color) 1px solid;
+}
+
+.header__decorative-element {
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.header__decorative-element::before {
+  content: "rec";
+  font-family: inherit;
+  font-weight: var(--font-weight-normal);
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header__decorative-element::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--accent-color);
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-inline: 10px;
+  box-shadow: 0px 0px 4px 3px #ff0070;
+}
+
+.header__theme-menu {
+  justify-self: right;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__theme-menu-button {
+  font-family: inherit;
+  box-sizing: border-box;
+  font-size: var(--text-font-size);
+  background-color: var(--main-color);
+  color: var(--accent-color);
+  border: none;
+  text-transform: lowercase;
+  padding: 0 13px;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-inline-start: 0;
+  border-inline-end: 0;
+  border-block-start: 0;
+  border-block-end: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu-button_active {
+  box-sizing: border-box;
+  pointer-events: none;
+  border: 1px var(--accent-color) solid;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px rgba(255, 0, 112, 0.4) solid;
+  padding: 0 13px;
+  cursor: pointer;
+}
+
+.header__title {
+  margin: 0;
+  font-family: inherit;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px #ff0070;
+  font-size: var(--title-font-size);
+  line-height: 82.5%;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  line-height: 23.4px;
+  color: var(--main-color);
+}
+
+.header__text {
+  align-self: center;
 }
