@@ -1,5 +1,59 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+/* MAIN */
+
+:root {
+  --small-gap: 10px;
+  --big-gap: 20px;
+}
+
+.main {
+  padding: 0 10px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.section:not(:first-child) {
+  margin-block-start: 50px;
+}
+
+.section__title {
+  background-color: yellow;
+}
+
+.article__box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.article__title {
+  background-color: aqua;
+  margin-block-start: var(--big-gap);
+}
+
+.article__text {
+  background-color: pink;
+  margin-block-start: var(--small-gap);
+}
+
+.article__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article__list-item-title {
+  margin-block-start: var(--big-gap);
 }
