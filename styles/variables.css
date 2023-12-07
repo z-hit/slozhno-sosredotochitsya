@@ -3,10 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
-  --main-color: #000028;
+  --background-color: #000028;
+  --background-image: url("../images/cover-image-dark.png");
   --accent-color: #ff0070;
-  --title-color: #db00ff;
+  --header-title-color: #db00ff;
+  --section-title-color: #ff0070;
+  --text-title-color: #000028;
   --text-color: #f1b2ce;
+  --button-hover-border-color: rgba(255, 0, 112, 0.4);
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-font-size: 18px;
   --font-weight-bold: 700;

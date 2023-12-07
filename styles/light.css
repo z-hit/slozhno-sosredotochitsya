@@ -6,6 +6,19 @@
 
 :root.theme-light {
   /* Переменные светлой темы */
+  --background-color: #fff1f7;
+  --background-image: url("../images/cover-image-light.png");
+  --accent-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --section-title-color: #353430;
+  --text-title-color: #353430;
+  --text-color: #353430;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --text-font-size: 18px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --small-gap: 10px;
+  --big-gap: 20px;
 }
 
 /* Остальные стили */
@@ -13,14 +26,25 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
+    --background-color: #fff1f7;
+    --background-image: url("../images/cover-image-light.png");
+    --accent-color: #ff8dcb;
+    --header-title-color: #ffc2e6;
+    --section-title-color: #353430;
+    --text-title-color: #353430;
+    --text-color: #353430;
+    --button-hover-border-color: rgba(50, 49, 45, 0.4);
+    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --text-font-size: 18px;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --small-gap: 10px;
+    --big-gap: 20px;
+  }
+
+  .header__decorative-element {
+    display: none;
   }
 }
 
 /* Остальные стили */
-
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-}
