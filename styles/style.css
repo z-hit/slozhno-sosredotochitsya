@@ -259,10 +259,13 @@
     --intersection-gap: 80px;
     --first-intersection-gap: 60px;
     --main-padding-inline: 20px;
+    --header-title-font-size: clamp(7.25rem, 4.625rem + 5.4688vw, 8.125rem);
+
   }
 
   .header {
     grid-template-rows: 1fr auto 1fr;
+    gap: 20px;
   }
 
   .decorated-zone::before {
@@ -280,8 +283,6 @@
   inset-block-start: 20px;
 }
 
-.header__theme-menu {
-}
 
   .header__title {
     margin: -20px;
@@ -337,25 +338,15 @@
   
   .picture-street {
     grid-column-start: span 2;
-
   }
 
   .footer {
-      margin-block-start: 60px;
-
+    margin-block-start: 60px;
   }
   
 
 @media (min-width: 1024px) {
-  :root {
-    --header-footer-padding: 20px;
-    --intersection-gap: 80px;
-    --first-intersection-gap: 60px;
-    --main-padding-inline: 20px;
-    --header-title-font-size: clamp(7.5rem, 4.8571rem + 5.506vw, 9.8125rem);
-
-  }
-
+  
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
@@ -363,10 +354,8 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-
   }
   
-
   .header__text {
     inline-size: 491px;
   }
