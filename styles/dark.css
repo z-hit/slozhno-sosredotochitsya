@@ -20,6 +20,12 @@
   --font-weight-normal: 400;
   --small-gap: 10px;
   --big-gap: 20px;
+  --header-footer-padding: 10px;
+  --intersection-gap: 50px;
+  --first-intersection-gap: 40px;
+  --main-padding-inline: 10px;
+  --grid-column-gap: 20px;
+
   --display-toggle: initial;
 }
 

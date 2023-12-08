@@ -11,11 +11,16 @@
   --text-title-color: #000028;
   --text-color: #f1b2ce;
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
-  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --text-font-size: 18px;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --small-gap: 10px;
   --big-gap: 20px;
+  --header-footer-padding: 10px;
+  --first-intersection-gap: 40px;
+  --intersection-gap: 50px;
+  --main-padding-inline: 10px;
+  --grid-column-gap: 20px;
   --display-toggle: initial;
 }
