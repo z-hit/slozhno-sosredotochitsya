@@ -259,7 +259,7 @@
     --intersection-gap: 80px;
     --first-intersection-gap: 60px;
     --main-padding-inline: 20px;
-    --header-title-font-size: clamp(7.25rem, 4.625rem + 5.4688vw, 8.125rem);
+    --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
   }
 
@@ -362,6 +362,10 @@
 
   .section__examples .section__title {
     inline-size: 315px;
+  }
+
+  .section {
+    grid-column-gap: 10px;
   }
 
   .section__examples .article__box {
