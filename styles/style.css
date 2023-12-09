@@ -5,7 +5,7 @@
 }
 
 .page {
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--background-color);
   font-family: "IBM Plex Mono", sans-serif;
   font-size: var(--text-font-size);
@@ -26,6 +26,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
   block-size: 100vh;
+  min-block-size: 668px;
   padding: var(--header-footer-padding);
 }
 
@@ -85,7 +86,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: var(--small-gap);
+  gap: 13px;
   align-items: center;
   justify-content: center;
   list-style: none;
@@ -97,7 +98,7 @@
   font-size: var(--text-font-size);
   background-color: transparent;
   color: var(--section-title-color);
-  border: 1px solid transparent;
+  border: none;
   text-transform: lowercase;
   padding: 0 13px;
 }
@@ -107,23 +108,20 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-block-end: 1px var(--section-title-color) solid;
 }
 
 .header__theme-menu-button_active {
-  box-sizing: border-box;
   pointer-events: none;
-  border: 1px var(--section-title-color) solid;
+  outline: 1px var(--section-title-color) solid;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px var(--button-hover-border-color) solid;
-  padding: 0 13px;
+  outline: 1px var(--button-hover-border-color) solid;
   cursor: pointer;
 }
 
-.huge-title {
+.title-huge {
   font-size: var(--header-title-font-size);
   line-height: 82.5%;
   margin: 0;
@@ -179,11 +177,11 @@
 }
 
 .article__title {
-  margin-block-start: var(--big-gap);
+  margin-block-start: var(--title-gap);
 }
 
 .article__text {
-  margin-block-start: var(--small-gap);
+  margin-block-start: var(--item-gap);
   color: var(--text-color);
   font-family: inherit;
   font-size: inherit;
@@ -207,7 +205,7 @@
 }
 
 .article__text-link:focus-visible {
-  border: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
 
 .article__list {
@@ -216,7 +214,7 @@
 }
 
 .article__list-item-title {
-  margin-block-start: var(--big-gap);
+  margin-block-start: var(--title-gap);
   color: var(--text-title-color);
   font-family: inherit;
   font-weight: var(--font-weight-normal);
@@ -226,14 +224,14 @@
 }
 
 .gallery__title {
-  margin-block-end: var(--small-gap);
+  margin-block-end: var(--item-gap);
 }
 
 .gallery__box {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: var(--small-gap);
+  gap: var(--item-gap);
 }
 
 .gallery__picture {
@@ -247,6 +245,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   block-size: 100vh;
+  min-block-size: 668px;
   padding: var(--header-footer-padding);
 }
 
@@ -254,108 +253,4 @@
   text-shadow: 2px 2px 0px var(--accent-color);
   align-self: center;
   justify-self: center;
-}
-
-@media (min-width: 768px) {
-  :root {
-    --header-footer-padding: 20px;
-    --intersection-gap: 80px;
-    --first-intersection-gap: 60px;
-    --main-padding-inline: 20px;
-    --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --decorative-element-inset: 20px;
-    --main-margin: 60px;
-  }
-
-  .header {
-    grid-template-rows: 1fr auto 1fr;
-    gap: 20px;
-  }
-
-  .header__title {
-    margin: -20px;
-  }
-
-  .header__text {
-    inline-size: 364px;
-    justify-self: end;
-  }
-
-  .section__reasons,
-  .section__advice {
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: var(--grid-column-gap);
-  }
-
-  .section__reasons .article__title:first-child,
-  .section__advice .article__title:first-child {
-    margin-block-start: 0;
-  }
-
-  .section__examples .section__title {
-    inline-size: 236px;
-  }
-
-  .gallery__box {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-  }
-
-  .gallery__title {
-    margin-block-end: 20px;
-  }
-  .picture-sunset {
-    grid-column-start: span 2;
-  }
-
-  .picture-ice-cream {
-    grid-row-start: span 2;
-    block-size: 100%;
-    object-fit: cover;
-  }
-
-  .picture-tape {
-    grid-row-start: span 2;
-    block-size: 100%;
-    object-fit: cover;
-  }
-
-  .picture-street {
-    grid-column-start: span 2;
-  }
-
-  .footer {
-    margin-block-start: 60px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header__theme-menu {
-    align-self: flex-start;
-    justify-self: center;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
-  }
-
-  .header__text {
-    inline-size: 491px;
-  }
-
-  .section__examples .section__title {
-    inline-size: 315px;
-  }
-
-  .section {
-    grid-column-gap: 10px;
-  }
-
-  .section__examples .article__box {
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-auto-flow: column;
-    grid-column-gap: 20px;
-  }
 }

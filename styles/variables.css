@@ -17,9 +17,10 @@
   --font-weight-bold: 700;
   --font-weight-normal: 400;
 
+  --item-gap: 10px;
+  --title-gap: 20px;
+
   --main-margin: 40px;
-  --small-gap: 10px;
-  --big-gap: 20px;
   --header-footer-padding: 10px;
   --header-footer-margin-block: 40px;
   --first-intersection-gap: 40px;
