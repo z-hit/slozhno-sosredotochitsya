@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme_dark {
+:root .theme_dark {
   /* Дублируем переменные для тёмной темы */
   --background-color: #000028;
   --background-image: url("../images/cover-image-dark.png");

@@ -4,12 +4,13 @@
   переключая тему
 */
 
-:root.theme_light {
+:root .theme_light {
   /* Переменные светлой темы */
   --background-color: #fff1f7;
   --background-image: url("../images/cover-image-light.png");
   --accent-color: #ff8dcb;
   --header-title-color: #ffc2e6;
+  --button-hover-border-color: rgba(50, 49, 45, 0.4);
   --section-title-color: #353430;
   --text-title-color: #353430;
   --text-color: #353430;
