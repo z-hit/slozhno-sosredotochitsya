@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-dark {
+:root.theme_dark {
   /* Дублируем переменные для тёмной темы */
   --background-color: #000028;
   --background-image: url("../images/cover-image-dark.png");
@@ -15,21 +15,6 @@
   --text-color: #f1b2ce;
   --button-hover-border-color: rgba(255, 0, 112, 0.4);
   --display-toggle: initial;
-  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --text-font-size: 18px;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-
-  --main-margin: 40px;
-  --item-gap: 10px;
-  --title-gap: 20px;
-  --header-footer-padding: 10px;
-  --header-footer-margin-block: 40px;
-  --first-intersection-gap: 40px;
-  --intersection-gap: 50px;
-  --main-padding-inline: 10px;
-  --grid-column-gap: 20px;
-  --decorative-element-inset: 10px;
 }
 
 /* Остальные стили */

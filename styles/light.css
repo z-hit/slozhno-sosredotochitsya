@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-light {
+:root.theme_light {
   /* Переменные светлой темы */
   --background-color: #fff1f7;
   --background-image: url("../images/cover-image-light.png");
@@ -14,21 +14,6 @@
   --text-title-color: #353430;
   --text-color: #353430;
   --display-toggle: none;
-  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --text-font-size: 18px;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-
-  --main-margin: 40px;
-  --item-gap: 10px;
-  --title-gap: 20px;
-  --header-footer-padding: 10px;
-  --header-footer-margin-block: 40px;
-  --first-intersection-gap: 40px;
-  --intersection-gap: 50px;
-  --main-padding-inline: 10px;
-  --grid-column-gap: 20px;
-  --decorative-element-inset: 10px;
 }
 
 /* Остальные стили */
@@ -45,21 +30,6 @@
     --text-color: #353430;
     --button-hover-border-color: rgba(50, 49, 45, 0.4);
     --display-toggle: none;
-    --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --text-font-size: 18px;
-    --font-weight-bold: 700;
-    --font-weight-normal: 400;
-
-    --main-margin: 40px;
-    --item-gap: 10px;
-    --title-gap: 20px;
-    --header-footer-padding: 10px;
-    --header-footer-margin-block: 40px;
-    --first-intersection-gap: 40px;
-    --intersection-gap: 50px;
-    --main-padding-inline: 10px;
-    --grid-column-gap: 20px;
-    --decorative-element-inset: 10px;
   }
 }
 
